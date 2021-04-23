@@ -19,6 +19,7 @@ body {
 .container-top {
     background-image: url('../images/bg2.png');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .flextop div {
@@ -50,18 +51,20 @@ body {
 .container {
     background-image: url('../images/SectionBackground.png');
     margin: 0;
-    
+    background-repeat: no-repeat; /* It gives to not repeat image when screen resized  */
+    background-size: cover;         /* and it covers the full screen whenever screen resized  */
 }
 
 
 .flex-container {
     display: flex;
     flex-direction: row;  
-    justify-content: center;
+    
 }
 
 .flexbody {
     padding: 100px 0;
+    justify-content: center;
 }
 
 .flexbody div {
@@ -81,7 +84,16 @@ body {
     width: 50%;
 }
 
+.flexbody div h3 {
+  display: inline-block;
 
+}
+.flexbody div h3.prices {
+    float: right;
+}
+.flexbody hr {
+    border-top: 1px solid #c90;
+}
 /* ----------------------- Footer --------------------- */
 
 footer {
